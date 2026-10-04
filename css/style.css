@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 30px 15px;
+  color: #222;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #1f3a5f;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#taskInput {
+  flex: 1;
+  min-width: 180px;
+  padding: 9px;
+  border: 1px solid #aab4c3;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2f6fb0;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #245a91;
+}
+
+#loadSamplesBtn {
+  background-color: #6b7a8f;
+}
+
+.message {
+  color: #c0392b;
+  min-height: 20px;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  background: #f3f6fa;
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #d5dce6;
+  border-left: 5px solid #e6a23c;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.task-item[data-state="completed"] {
+  border-left-color: #3a9d5d;
+}
+
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #2f6fb0;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.complete-btn { background-color: #3a9d5d; }
+.complete-btn:hover { background-color: #2e7d49; }
+
+.edit-btn { background-color: #e6a23c; }
+.edit-btn:hover { background-color: #c98a2c; }
+
+.remove-btn { background-color: #d9534f; }
+.remove-btn:hover { background-color: #b94441; }
